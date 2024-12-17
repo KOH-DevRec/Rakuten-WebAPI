@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.domain.global.mapper.RakutenCheckOrderMapper">
+
+<!--
+ * マッパー
+ *
+ *  < CHANGE HISTORY >
+ *     X.XXXXXX    0000/00/00 ①XXXXXXXX
+-->
+
+  <!-- 店舗API認証情報取得 -->
+  <select id="execRakutenCheckOrder" parameterType="int" resultType="jp.co.domain.global.bean.entity.ApiAuthorization">
+    <!-- RPMで指定 -->
+    SPDB.dbo.RCO0235 #{prm}
+    <!-- テスト用(店舗コードで指定) -->
+    <!-- SPDB.dbo.RCO0235_T #{prm} -->
+  </select>
+
+</mapper>
